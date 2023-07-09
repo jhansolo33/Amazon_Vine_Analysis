@@ -64,6 +64,7 @@ Customer Table The customers_table DataFrame was created by aggregating(counting
 
 
 Products Table The products_table DataFrame was designed using the select() function to select the product_id and product_title, then drop duplicates with the drop_duplicates() function to retrieve only unique product_ids. The result follows:
+![Products T](https://github.com/jhansolo33/Amazon_Vine_Analysis/assets/119264589/99fa88e0-f458-49ee-af7e-f57ad23739fd)
 
 
 Review id Table The review_id_table DataFrame was organized using the select() function to select the columns that are in the review_id_table in pgAdmin, and convert the review_date column to a date using the code snippet.The final review_id_table DataFrame follows:
