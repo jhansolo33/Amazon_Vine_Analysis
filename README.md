@@ -8,12 +8,11 @@ For this project, I partnered with Jennifer, an account manager at BigMarket. We
 
 • Data Tools: Amazon_Reviews_ETL.ipynb and Vine_Review_Analysis.ipynb.
 
-• Software: Python 3.9, Visual Studio Code 1.50.0, Anaconda 4.8.5, Jupyter Notebook 6.1.4 and Pandas
-
+• Software: Python, Visual Studio Code, Anaconda, Jupyter Notebook, and Pandas
 • Cloud Storage with S3 on AWS
 
 ### Database Versus Data Storage
-• A database is necessary for holding raw data such as CSVs, Excel files, and JavaScript Object Notation (JSON) files. This data doesn't need to be queried and analyzed for business decisions. The files still have structure and can be reviewed, but not nearly as efficiently as a database. This database has been carefully planned and structured so that data can be analyzed efficiently through queries. Doing so comes at a cost of processing data to fit all the rules and structures.
+• A database is necessary for holding raw data such as CSVs, Excel files, and JavaScript Object Notation (JSON) files. This data doesn't need to be queried and analyzed for business decisions. The files still have structure and can be reviewed, but not nearly as efficiently as a database. This database has been structured so that data can be analyzed efficiently through queries. Doing so comes at a cost of processing data to fit all the rules and structures.
 
 • Data storage is a place where large amounts of raw data can be kept without any munging or curating. Data storage allows us to keep data of different types or data we might want to parse in the future.
 
@@ -25,7 +24,7 @@ For this project, I partnered with Jennifer, an account manager at BigMarket. We
 
 • One of S3's perks is its fine-grained control over files. Each file or bucket can have different read and write permissions, which helps regulate what can be done with each file.
 
-• S3 is also very scalable—you are not limited to the memory of one computer. As data flows in, more and more can be stored, as opposed to a local computer that is limited by available memory. Additionally, it offers availability—several team members can access massive amounts of data from one central location.
+• S3 is also scalable: A person is not limited to the memory of one computer. As data flows in, more and more can be stored, as opposed to a local computer that is limited by available memory. Additionally, it offers availability—several team members can access massive amounts of data from one central location.
 
 ###  Process
 Extract
