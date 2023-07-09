@@ -34,12 +34,15 @@ Starts with creating a new notebook, installing/ importing Spark, java, Environm
 In Transform, the raw data stored in S3 is available in a PySpark DataFrame, we can perform our transformations. First, the two tables joined together.
 
 Joining Tables
+![Joined tables](https://github.com/jhansolo33/Amazon_Vine_Analysis/assets/119264589/c55fce12-0ecb-468d-9f47-48e0ae9729a4)
 
 
 Dropping
+![Drop NA](https://github.com/jhansolo33/Amazon_Vine_Analysis/assets/119264589/4a18b487-1254-437f-b4c8-92ba170d0f54)
 
 
 Cleaning
+![Cleaned](https://github.com/jhansolo33/Amazon_Vine_Analysis/assets/119264589/9f8dc818-f3f4-43c8-81a0-84d30d41bb30)
 
 
 Next, selected columns are used to create three different DataFrames that match what is in the AWS RDS database. A DataFrame was designed to match the active_user table. Once our data has been transformed to fit the tables in our database, we're ready to move on to the "Load" step.
