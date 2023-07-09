@@ -60,40 +60,48 @@ o The extracted dataset is transformed into four DataFrames with the correct col
 o All four DataFrames are loaded into their respective tables in pgAdmin
 
 Customer Table The customers_table DataFrame was created by aggregating(counting) the reviews and chaining it to the groupby() function to create a new column, count(customer_id). Other adjustments was the renaming the count(customer_id) column using the withColumnRenamed() function so it matched the schema for the customers_table in pgAdmin. The result follows:
+![Customer T](https://github.com/jhansolo33/Amazon_Vine_Analysis/assets/119264589/a98e4105-9c41-4110-a866-b6e8d9cf27a9)
 
 
 Products Table The products_table DataFrame was designed using the select() function to select the product_id and product_title, then drop duplicates with the drop_duplicates() function to retrieve only unique product_ids. The result follows:
 
 
 Review id Table The review_id_table DataFrame was organized using the select() function to select the columns that are in the review_id_table in pgAdmin, and convert the review_date column to a date using the code snippet.The final review_id_table DataFrame follows:
+![Rev T](https://github.com/jhansolo33/Amazon_Vine_Analysis/assets/119264589/24ba4031-ade8-40ed-a966-dbdad5dd52aa)
 
 
 Vine Table The vine_table DataFrame was also created using the select() function to select only the columns that are in the vine_table in pgAdmin. The final vine_table DataFrame follows:
 
+![Vine T](https://github.com/jhansolo33/Amazon_Vine_Analysis/assets/119264589/67f539f4-c5c8-4977-af3f-c3145a7763f2)
 
 ###  Determine Bias of Vine Reviews
 Helpful Reviews (All) with 5 Star: For all reviews and "helpful" reviews, around half of the ratings are 5 Star, which indicates that the Vine programs tend to give 5 Stars over any other rating.
 
 ###  Total Vine and non-Vine Reviews
 From the data, 99.5 % of the reviews are from the non-Vine category leaving only .005 % contribution of the vine as a whole.
+![Chart 1](https://github.com/jhansolo33/Amazon_Vine_Analysis/assets/119264589/557aae26-bb9e-408f-9421-236f84fd25fb)
 
 
 
 ###  5-star Total Vine Reviews vs 5-star Total non-Vine Reviews
 The 5-star non-Vine participants dominate the review percentage at 99.60 % as appose to the 5-star total Vine participants at 0.04 %
-
+![Chart 2](https://github.com/jhansolo33/Amazon_Vine_Analysis/assets/119264589/ea7ef33f-88f0-4249-bcf8-95a5fb5f6918)
 
 
 ###Summary of 5-star reviews: Vine and non-Vines The results show that 5-star reviews from Vine members is 41.62% and the 5-star reviews from non-Vine members was 53.02%. The Non-vine reviews has a 11 % higher percentage of the 5-star reviews, this does represent significant difference..
+![Chart 3](https://github.com/jhansolo33/Amazon_Vine_Analysis/assets/119264589/659fee94-457d-4871-8f84-2b9f26877024)
 
 
 
-Summary of Total Star Reviews - Vine and non-Vines
+Summary of Total Star Reviews - Vine and non-Vines:
+![Chart 4](https://github.com/jhansolo33/Amazon_Vine_Analysis/assets/119264589/b3f5045a-92fb-4ea0-bca3-37fe880c53b4)
+
+![Chart 5](https://github.com/jhansolo33/Amazon_Vine_Analysis/assets/119264589/0b5563b9-527d-4a04-8143-bad1af293692)
 
 
 
 
-##  Summary/Proposed Analysis for the future
+##  Summary and my proposed analysis for the future
 The analysis performed was designed to substantiate a bias of Vine Reviews. Specifically, a bias toward favorable reviews from Vine members in the dataset. Products were selected based on whether 20 total votes or more existed and a percentage of helpful votes equaling or greater than 50. This allowed for a consistent, representable sample. The initial analysis calculations results show that 5-star reviews from Vine members is 41.62% and the 5-star reviews from non-Vine members was 53.02%. The Non-vine reviews has a 11% percentage difference than that of the 5-star reviews. Is this significant?
 
 ##  Chi verses t-test
