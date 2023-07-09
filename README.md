@@ -47,7 +47,7 @@ Cleaning
 
 Next, selected columns are used to create three different DataFrames that match what is in the AWS RDS database. A DataFrame was designed to match the active_user table. Once our data has been transformed to fit the tables in our database, we're ready to move on to the "Load" step.
 
-Load
+###  Load
 The final step is to get our transformed raw data into our database. PySpark can easily connect to a database to load the DataFrames into the table. First, we configured settings for RDS to allow the connection with AWS server and PgAdmin. We'll append to the current table because every time we run this ETL process, we'll want more data added to our database without removing any. The cleaned DataFrames can then be written directly to our database by using the .write.jdbc method that takes in the parameters we set. The connection string stored in jdbc_url is passed to the URL argument. The corresponding name of the table we are writing the DataFrame to. The mode we're using, which is "append." The connection configuration we set up passed to the properties. Finally we run queries in pgAdmin on our database to confirm a successful load.
 
 ###  Products of ETL:
